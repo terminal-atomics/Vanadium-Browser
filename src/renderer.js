@@ -6,7 +6,7 @@ module.exports.render = async function() {
 }
 
 module.exports.init = function(screen) {
-    var window = blessed.box({
+    let window = blessed.box({
         top: 'center',
         left: 'center',
         width: '100%',
@@ -18,12 +18,9 @@ module.exports.init = function(screen) {
         },
         style: {
             fg: 'white',
-            bg: 'magenta',
+            bg: 'white',
             border: {
                 fg: '#f0f0f0'
-            },
-            hover: {
-                bg: 'green'
             }
         }
     });
