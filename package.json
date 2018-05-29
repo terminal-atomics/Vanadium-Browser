@@ -17,13 +17,14 @@
     "Browser",
     "Terminal"
   ],
-  "author": "Ben and Lyda",
+  "author": "Ben, Lyranthe and b_boy_ww",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/terminal-atomics/Modern-Terminal-Browser/issues"
   },
   "homepage": "https://github.com/terminal-atomics/Modern-Terminal-Browser#readme",
   "dependencies": {
-    "blessed": "^0.1.81"
+    "blessed": "^0.1.81",
+    "fs": "0.0.1-security"
   }
 }
