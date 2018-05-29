@@ -1,2 +1,2 @@
 # Modern Terminal Broswer
-A modern DOS style browser.
+A modern and maintained DOS style browser.
