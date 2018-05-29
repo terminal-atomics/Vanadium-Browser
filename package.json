@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/terminal-atomics/Modern-Terminal-Browser/issues"
   },
-  "homepage": "https://github.com/terminal-atomics/Modern-Terminal-Browser#readme"
+  "homepage": "https://github.com/terminal-atomics/Modern-Terminal-Browser#readme",
+  "dependencies": {
+    "blessed": "^0.1.81"
+  }
 }
