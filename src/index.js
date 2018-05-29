@@ -18,11 +18,11 @@ const render = require('./renderer');
 	3. Readable
 */
 
-var screen = blessed.screen({
+let screen = blessed.screen({
     smartCSR: true
 });
 
-var window = render.init(screen);
+let window = render.init(screen);
 
 screen.key(['escape', 'q', 'C-c'], function(ch, key) {
     return process.exit(0);
