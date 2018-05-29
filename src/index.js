@@ -9,6 +9,7 @@ const render = require('./renderer');
 	Tabs - 4 spaces
 	Same line bracing
 	Honestly just look around the code base and imitate the style
+	use Let var types pls
 
 	Make sure your code is:
 

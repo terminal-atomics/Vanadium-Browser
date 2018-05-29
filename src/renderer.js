@@ -5,18 +5,6 @@ module.exports.render = async function() {
     screen.render();
 }
 
-// wtf does this do
-// nothing...
-// ???
-// i mean, you can tell from title, it's not suspicious...
-// 
-module.exports.NotSus = function() {
-    let i;
-    for(i = 0; i < 99; i++) {
-        console.log(i);   
-    }
-}
-
 module.exports.init = function(screen) {
     var window = blessed.box({
         top: 'center',
@@ -39,19 +27,16 @@ module.exports.init = function(screen) {
             }
         }
     });
-    var icon = blessed.image({
-        parent: window,
-        top: 0,
-        left: 0,
-        type: 'overlay',
-        width: 'shrink',
-        height: 'shrink',
-        file: __dirname + '/my-program-icon.png',
-        search: false
-    });
 
     screen.title = 'Terminal Browser';
 	screen.append(window);
 
 	return window;
 }
+
+/* module.exports.NotSus = function() {
+    let i;
+    for(i = 0; i < 99; i++) {
+        console.log(i);   
+    }
+} */ 
