@@ -1,0 +1,22 @@
+# Contributing
+
+First off, we thank you for taking the time to contribute to the Vanadium [Pronounced Van-Aid-ee-um] Browser.
+
+When contributing or submitting pull requests follow these guidelines or your contribution will not be taken seriously.
+
+## Make sure your code is
+
+1. Functional
+2. Maintainable and Scalable
+3. Readable
+
+## Linting
+
+* Tabs - 4 spaces
+* Same line bracing
+* Honestly just look around the code base and imitate the style
+* Use Let var types pls
+
+## Pull requests we reject
+
+* Anything from b_boy_ww

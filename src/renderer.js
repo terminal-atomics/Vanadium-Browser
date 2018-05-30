@@ -14,7 +14,17 @@ module.exports.init = function(screen) {
         content: 'Terminal Browser',
         tags: true,
         border: {
-            type: 'line'
+            type: 'line',
+            fg: 'black'
+        },
+        scrollbar: {
+            bg: 'blue'
+        },
+        focus: {
+            bg: 'red'
+        },
+        hover: {
+          bg: 'red'
         },
         style: {
             fg: 'white',
@@ -24,6 +34,8 @@ module.exports.init = function(screen) {
             }
         }
     });
+
+    //trying to make a text box... looking at docs
 
     screen.title = 'Terminal Browser';
 	screen.append(window);
