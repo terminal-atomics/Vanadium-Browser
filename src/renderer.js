@@ -11,7 +11,7 @@ module.exports.init = function(screen) {
         left: 'center',
         width: '100%',
         height: '100%',
-        content: 'Terminal Browser',
+        content: 'Vanadium Browser',
         tags: true,
         border: {
             type: 'line',
