@@ -96,7 +96,7 @@ module.exports.init = function(screen) {
    
     //trying to make a text box... looking at docs
 
-    screen.title = 'Terminal Browser';
+    screen.title = 'Vanadium Browser';
 	window.append(menbox);
 	window.append(pageBody)
 	screen.append(window);
