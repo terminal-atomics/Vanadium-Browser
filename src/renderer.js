@@ -11,7 +11,7 @@ module.exports.init = function(screen) {
         left: 'center',
         width: '100%',
         height: '100%',
-        content: 'Terminal Browser',
+        content: 'Vanadium Browser',
         tags: true,
         border: {
             type: 'line',
@@ -33,48 +33,70 @@ module.exports.init = function(screen) {
                 fg: '#f0f0f0'
             }
         }
+    });
+    
+    let menbox = blessed.box({
+		top: '-10%',
+		left: -1,
+		height: '20%',
+        width: '100%',
+        border: {
+            type: 'line',
+        },
 	});
-
 	let reload = blessed.button({
-		
+        content: 'R',
+        top: 1,
+        left: 1,
+        parent: menbox,
 	});
 
 	let forwardButton = blessed.button({
-
+        content: '>',
+        top: 1,
+        left: 3,
+        parent: menbox,
 	});
 
 	let backButton = blessed.button({
-
+        content: '<',
+        top: 1,
+        left: 5,
+        parent: menbox,
 	});
 	
-	let searchBar = blessed.input({
-		
-	});
-		
-    let menbox = blessed.box({
-		top: '-5%',
-		left: 0,
-		height: '20%',
-		width: '100%'
-	});
+
+    let searchBar = blessed.form({
+        parent: menbox,
+        width: '70%',
+        height: 1,
+      });
+      let prog = blessed.textbox({
+        parent: searchBar,
+        name:'program',
+        inputOnFocus: true,
+        left: 0,
+        top: 0,
+        width: '50%',
+        style: {
+            bg: '#55555555',
+        }
+      });	
 	
 	let pageBody = blessed.box({
 		top: '20%',
 		left: 0,
-		height: '80%',
-		width: '100%',
+		
+        style: {
+            bg: 'white',
+            fg: 'black',
+        },
 	})
-	let tinp = blessed.input({
 
-	});
-
+   
     //trying to make a text box... looking at docs
 
-    screen.title = 'Terminal Browser';
-	tinp.append(backButton);
-	tinp.append(forwardButton);
-	tinp.append(reload);
-	menbox.append(tinp);
+    screen.title = 'Vanadium Browser';
 	window.append(menbox);
 	window.append(pageBody)
 	screen.append(window);

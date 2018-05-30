@@ -5,7 +5,7 @@
 	Same line bracing
 	Honestly just look around the code base and imitate the style
 	Use Let var types pls
-	Use '' for strings and if needed ``
+	Use '' for string literals and if needed ``
 	Keep code well commented
 
 	Make sure your code is:
