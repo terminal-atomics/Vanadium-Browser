@@ -16,7 +16,7 @@ When contributing or submitting pull requests follow these guidelines or your co
 * Same line bracing
 * Honestly just look around the code base and imitate the style
 * Use Let var types pls
-* Use '' for strings and if needed ``
+* Use '' for string literals and if needed ``
 * Keep code well commented
 
 ## Pull requests we reject
