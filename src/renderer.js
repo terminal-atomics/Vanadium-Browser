@@ -36,41 +36,59 @@ module.exports.init = function(screen) {
     });
     
     let menbox = blessed.box({
-		top: 1,
+		top: -2,
 		left: -1,
-		height: '20%',
-        width: '100%',
+		height: '15%',
+        width: '110%',
         border: {
             type: 'line',
         },
 	});
 	let reload = blessed.button({
         content: 'R',
-        top: 1,
+        top: 0,
         left: 1,
+        width: 1,
         parent: menbox,
 	});
+    let left = blessed.line({
+        parent: menbox,
+        type: 'line',
+        height: '100%',
+        width: 1,
+        left: -1,
+        top: -1,
+    });
+    let right = blessed.line({
+        parent: menbox,
+        type: 'line',
+        height: '100%',
+        width: 1,
+        left: 78,
+        top: -1,
+    });
 
-	let forwardButton = blessed.button({
-        content: '>',
-        top: 1,
-        left: 3,
-        parent: menbox,
-	});
 
 	let backButton = blessed.button({
         content: '<',
-        top: 1,
-        left: 5,
+        top: 0,
+        left: 3,
+        width: 1,
         parent: menbox,
 	});
-	
+    let forwardButton = blessed.button({
+        content: '>',
+        top: 0,
+        left: 5,
+        width: 1,
+        parent: menbox,
+	});
 
     let searchBar = blessed.form({
         parent: menbox,
         width: '70%',
         height: 1,
-        left: 6
+        left: 7
       });
       let prog = blessed.textbox({
         parent: searchBar,
