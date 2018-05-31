@@ -19,11 +19,11 @@ When contributing or submitting pull requests follow these guidelines or your co
 * Use '' for string literals and if needed ``
 * Keep code well commented
 
-## Pull requests we reject
-
-* Anything from b_boy_ww
-
 ## Guidelines
 
 * The browser will work using the EGA pallete, keep it within those boundaries.
 * This means 16 colors at once out of a pallete of 64 colors. Look it up if you don't understand.
+
+## Pull requests we reject
+
+* Anything from b_boy_ww

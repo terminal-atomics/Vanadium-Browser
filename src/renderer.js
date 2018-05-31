@@ -36,7 +36,7 @@ module.exports.init = function(screen) {
     });
     
     let menbox = blessed.box({
-		top: '-10%',
+		top: 1,
 		left: -1,
 		height: '20%',
         width: '100%',
@@ -70,6 +70,7 @@ module.exports.init = function(screen) {
         parent: menbox,
         width: '70%',
         height: 1,
+        left: 6
       });
       let prog = blessed.textbox({
         parent: searchBar,
