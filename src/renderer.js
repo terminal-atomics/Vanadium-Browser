@@ -5,6 +5,7 @@ module.exports.render = async function() {
     screen.render();
 }
 
+
 module.exports.init = function(screen) {
     let window = blessed.box({
         top: 'center',
@@ -50,7 +51,8 @@ module.exports.init = function(screen) {
         left: 1,
         width: 1,
         parent: menbox,
-	});
+    });
+    
     let left = blessed.line({
         parent: menbox,
         type: 'line',
@@ -59,16 +61,19 @@ module.exports.init = function(screen) {
         left: -1,
         top: -1,
     });
+
+    var WWd = process.stdout.columns;
+    WWd = WWd - 2;
     let right = blessed.line({
         parent: menbox,
         type: 'line',
         height: '100%',
         width: 1,
-        left: 78,
+        left: WWd,
         top: -1,
     });
-
-
+    
+    
 	let backButton = blessed.button({
         content: '<',
         top: 0,
